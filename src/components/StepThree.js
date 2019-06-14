@@ -60,6 +60,9 @@ export default class Wizard extends Component {
                     placeholder="Rent Amount"
                     onChange={this.handleChange}
                     value={this.state.rent} /></p>
+                    <Link to={'/wizard/StepTwo'}>
+                    <button>Previous Step</button>
+                </Link>
                 
                     <button onClick={this.handleClick}>Complete</button>
                 

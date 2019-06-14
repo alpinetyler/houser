@@ -62,7 +62,10 @@ export default class Wizard extends Component {
                     onChange={this.handleChange}
                     value={this.state.zip} /></p>
                     <button onClick={this.handleClick}>Complete</button>
-                
+                    
+                    <Link to={'/wizard/StepTwo'}>
+                <button>Next Step</button>
+                </Link>
 
             </div>
         )
