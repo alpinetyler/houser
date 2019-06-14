@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 export default class Wizard extends Component{
 
@@ -7,6 +8,10 @@ export default class Wizard extends Component{
         return(
             <div>
                 <h1>Wizard</h1>
+                <Link to={'/'}>
+                    <button>Cancel</button>
+                </Link>
+                
             </div>
         )
     }
