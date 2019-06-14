@@ -15,6 +15,7 @@ const app = express();
 
 app.use(express.json())
 
+app.get('api/gethouses', Ctrl.read)
 
 app.listen(SERVER_PORT, () => {
     console.log('We listen on port', SERVER_PORT)
