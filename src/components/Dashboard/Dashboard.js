@@ -38,7 +38,7 @@ export default class Dashboard extends Component {
         // console.log(this.state.houses)
         return (
             <section>
-                <Link to={'/wizard'}>
+                <Link to={'/wizard/StepOne'}>
                 <button>Add New Property</button>
                 </Link>
             <div>
