@@ -1,13 +1,19 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
-export default class House extends Component{
+export default class House extends Component {
 
 
-    render(){
-        return(
-            <div>
-                <h1>House</h1>
-            </div>
+    render() {
+        let { name, address, city, state, zip, id } = this.props.house
+        return (
+            <section className="houseWrapper">
+                <div className="houseDisplay">
+                    <p>Name: {name}</p>
+                    <p>Address: {address}</p>
+                    <p>{city}, {state}, {zip}</p>
+                    <button onClick={() => this.props.deleteHouse(id)}>Delete</button>
+                </div>
+            </section>
         )
     }
 }
